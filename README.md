@@ -1,5 +1,9 @@
 
 
+
+https://github.com/user-attachments/assets/ad35c489-39c1-4e9c-926a-9d877ce17883
+
+
 # 🧠 Website & PDF Summarizer App
 
 A powerful and simple **Streamlit application** to summarize content from **websites** or **PDF documents**, and ask questions based on the summarized content using **Groq's LLaMA3-8B** model via **LangChain**.
