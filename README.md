@@ -1,4 +1,4 @@
-https://github.com/user-attachments/assets/895fc846-ed16-40bc-bc44-2ceec099da3e
+
 
 # 🧠 Website & PDF Summarizer App
 
