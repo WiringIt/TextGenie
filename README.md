@@ -1,59 +1,27 @@
-
-
-
 https://github.com/user-attachments/assets/ad35c489-39c1-4e9c-926a-9d877ce17883
+# 🧠 TextGenie – Smart Website & PDF Summarizer
 
-
-# 🧠 Website & PDF Summarizer App
-
-A powerful and simple **Streamlit application** to summarize content from **websites** or **PDF documents**, and ask questions based on the summarized content using **Groq's LLaMA3-8B** model via **LangChain**.
+An intelligent and interactive **Streamlit app** that summarizes content from **websites** and **PDFs**, and allows users to ask questions — powered by **Groq’s LLaMA3-8B** model via **LangChain**.
 
 ---
 
 ## 🔧 Features
 
-- 🌐 Summarize **Website URLs**
+- 🌐 Summarize content from any **website URL**
 - 📄 Upload and summarize **PDF files**
-- ❓ Ask **questions** based on the summarized content
-- ⚡ Powered by **Groq LLaMA3-8B** (via LangChain)
+- ❓ Ask **custom questions** based on the document content
+- ⚡ Uses **Groq's ultra-fast LLaMA3-8B** model with **LangChain**
 
 ---
-# File Structure
+
+## 📁 File Structure
+
 ```bash
-├── app.py                   # Main Streamlit interface
-├── summarizer.py            # Summarization and QA logic
-├── requirements.txt         # List of required packages
+├── app.py                  # Streamlit frontend UI
+├── summarizer.py           # Core summarization and Q&A logic
+├── requirements.txt        # Required Python packages
 └── .streamlit/
-    └── secrets.toml         # Contains Groq API key
-```
-## How It Works
+    └── secrets.toml        # Groq API key stored securely
 
-- For **websites**, content is extracted using `WebBaseLoader`.
-- For **PDFs**, content is extracted using `UnstructuredPDFLoader`.
-- Text is **truncated to 12,000 characters** to fit the model's input limit.
-- **LangChain prompt templates** are used to generate:
-  - 📄 A **concise summary**
-  - ❓ **Context-based answers** to user questions
-
-
-## 📦 Installation
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-pip install -r requirements.txt
-
-```
-# Set Up Secrets
-Create a file: .streamlit/secrets.toml and add your Groq API key:
-```bash
-groq_api_key = "your_groq_api_key_here"
-```
-# Run the App
-```bash
-streamlit run app.py
-```
 
 
